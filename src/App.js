@@ -5,11 +5,14 @@ import List from './Components/List';
 
 const initialState = [
   {
-    name: 'Ufuk Tas',
+    name: 'Person1',
     phone: '555',
   }, {
-    name: 'Irem Tas',
+    name: 'Person2',
     phone: '554',
+  }, {
+    name: 'Person3',
+    phone: '556',
   }
 ]
 function App() {
