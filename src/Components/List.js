@@ -1,14 +1,21 @@
 import React from 'react'
 
-export default function List({contacts}) {
+function List({ products }) {
     return (
-        <div className="list-contacts">
-            <ul className="contact-list">
-                <h1>CONTACTS</h1>
+        <div className="list-grocery">
+            <h1>LIST</h1>
+            <ul className="grocery-list">
                 {
-                    contacts.map((item, index) => <li className="contact-list-item" key={index}>{item.name}-----{item.phone}</li>)
+                    products.map((item, index) => 
+                        <li className="grocery-list-item" key={index}>
+                            <p>{item.product}</p>
+                            <input className='grocery-remove-btn' type='button' value='Remove'/>
+                        </li>
+                    )
                 }
             </ul>
         </div>
     )
 }
+
+export default List

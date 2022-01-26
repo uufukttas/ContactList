@@ -8,21 +8,27 @@
 }
 
 .App,
-.add-contact,
-.list-contacts {
+.add-product,
+.list-grocery {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.add-contact,
-.list-contacts {
+.add-product,
+.list-grocery {
+  display: flex;
+  flex-direction: column;
   padding: 2% 2% 0 2%;
   width: 100%;
 }
+.grocery-list {
+  display: flex;
+  flex-direction: column;
+}
 
-.add-contact-btn {
+.grocery-list-btn {
   margin-top: 2%;
   padding: 2%;
   cursor: pointer;
@@ -38,25 +44,27 @@ form {
   padding: 2%;
 }
 
-.contact-list-phone,
-.contact-list-name,
+.grocery-list-phone,
+.grocery-list-product,
 input[type="submit"] {
   width: 100%;
 }
 
-.contact-list-phone input,
-.contact-list-name input {
-  width: 65%;
+.grocery-list-phone input,
+.grocery-list-product input {
+  width: 85%;
   margin-top: 2%;
 }
 
 label {
   display: inline-block;
-  width: 35%;
+  width: 15%;
   text-align: left;
-}​
+}
 
-
-.contact-list-item {
+.grocery-list-item {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
